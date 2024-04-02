@@ -12,9 +12,8 @@ $(document).ready(function() {
 
     function updateCounter() {
         count++;
-        $('count').text(`${count} clicks on the button`);
+        $('#count').text(`${count} clicks on the button`);
     }
 
-    $('button').on('click', _.debounce(updateCounter, 300));
+    $('#startBtn').on('click', _.debounce(updateCounter, 300));
 });
-
